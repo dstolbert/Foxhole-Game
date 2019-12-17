@@ -28,6 +28,7 @@ class FoxholeGame():
 			
 			# Calculate the possible holes for the next day
 			holes = self.next_day(holes)
+			holes.sort()
 
 			# Repeat until no holes remain
 			if len(holes) > 0:
